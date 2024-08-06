@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import SessionProvider from "./components/providers/SessionProvider";
+import ThemeProvider from "./components/providers/ThemeProvider";
+import Footer from "./components/Footer";
+import Topbar from "./components/Topbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ThemeProvider>
+          <SessionProvider>
+            <Topbar />
+            <div className="min-h-[calc(100%-80px)]">{children}</div>
+            <Footer />
+          </SessionProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
