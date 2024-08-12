@@ -12,6 +12,13 @@ const Footer = () => {
       >
         Demo
       </Link>
+      <Link
+        href="/OptionsMenu"
+        key="OptionsMenu"
+        className="font-medium text-3xl bg-white border-2 border-white"
+      >
+        OptionsMenu
+      </Link>
     </div>
   );
 };

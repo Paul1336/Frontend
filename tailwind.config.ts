@@ -13,7 +13,25 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "bg-grey": "#f8f8f8",
+        "sec-black": "#333",
+        "bg-white": "#fff",
+        tomato: "#eb3223",
+        mid: "#b8b8b8",
+      },
+      spacing: {},
+      fontFamily: {
+        jost: "Jost",
+      },
+      borderRadius: {
+        xl: "20px",
+      },
     },
+    fontSize: {
+      xl: "20px",
+      inherit: "inherit",
+    }, 
   },
   plugins: [],
 };
