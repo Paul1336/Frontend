@@ -6,7 +6,7 @@ interface Props {
   className?: string;
 }
 
-const OptionsLinkPanel = ({ className }: Props) => {
+const OptionsLinkPanel: FunctionComponent = ({ className }: Props) => {
   const onOptionsGridContainerClick = useCallback(() => {
     // Please sync "優惠記錄" to the project
   }, []);

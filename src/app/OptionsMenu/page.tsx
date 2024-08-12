@@ -2,14 +2,18 @@
 import { FunctionComponent, useCallback } from "react";
 import OptionsLinkPanel from "../components/OptionsLinkPanel";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Frame: FunctionComponent = () => {
+  const router = useRouter();
+
   const onUserDataContainerClick = useCallback(() => {
-    // Please sync "用戶資料" to the project
-  }, []);
+    router.push("/UserData");
+  }, [router]);
 
   const onLogoutContainerClick = useCallback(() => {
-    // Please sync "登入/註冊介面" to the project
+    //navigate to Login page
   }, []);
 
   return (
