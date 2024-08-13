@@ -10,7 +10,7 @@ const UserDataPanel: FunctionComponent<UserDataPanelType> = ({
 }) => {
   return (
     <div
-      className={`flex-1 shadow-[0px_1px_10px_rgba(0,_0,_0,_0.25)] rounded-xl bg-bg-white flex flex-row items-start justify-start pt-[31px] pb-[29px] pl-[30px] pr-[29px] box-border max-w-full text-left text-base text-sec-black font-jost ${className}`}
+      className={`self-stretch ml-[27px] shadow-[0px_1px_10px_rgba(0,_0,_0,_0.25)] rounded-xl bg-bg-white flex flex-row items-start justify-start pt-[31px] pb-[29px] pl-[30px] pr-[29px] box-border max-w-full text-left text-base text-sec-black font-jost ${className}`}
     >
       <div className="h-[500px] w-[331px] relative rounded-xl bg-bg-white hidden max-w-full" />
       <div className="flex-1 flex flex-col items-start justify-start gap-4 z-[1]">

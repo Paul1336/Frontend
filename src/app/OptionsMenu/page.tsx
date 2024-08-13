@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const Frame: FunctionComponent = () => {
+const OptionsMenu: FunctionComponent = () => {
   const router = useRouter();
 
   const onUserDataContainerClick = useCallback(() => {
@@ -94,6 +94,7 @@ const Frame: FunctionComponent = () => {
           </div>
         </div>
       </section>
+
       <div className="self-stretch flex flex-row items-start justify-center py-0 pl-5 pr-[23px]">
         <div className="w-[134px] relative tracking-[-0.01em] leading-[150%] inline-block shrink-0">
           <p className="m-0">Version 1.0.0</p>
@@ -113,4 +114,4 @@ const Frame: FunctionComponent = () => {
   );
 };
 
-export default Frame;
+export default OptionsMenu;
