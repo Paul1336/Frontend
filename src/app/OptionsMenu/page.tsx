@@ -12,6 +12,10 @@ const OptionsMenu: FunctionComponent = () => {
     router.push("/UserData");
   }, [router]);
 
+  const onClickBack = useCallback(() => {
+    router.back();
+  }, [router]);
+
   const onLogoutContainerClick = useCallback(() => {
     //navigate to Login page
   }, []);
@@ -39,7 +43,7 @@ const OptionsMenu: FunctionComponent = () => {
                 height={15}
               />
             </div>
-            <div className="relative tracking-[-0.01em] leading-[150%] inline-block min-w-[32px]">
+            <div className="relative tracking-[-0.01em] leading-[150%] inline-block min-w-[32px]" onClick={onClickBack}>
               返回
             </div>
           </div>

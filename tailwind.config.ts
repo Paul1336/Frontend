@@ -22,7 +22,7 @@ const config: Config = {
       },
       spacing: {},
       fontFamily: {
-        jost: "Jost",
+        jost: ["var(--font-jost)", "inter"],
       },
       borderRadius: {
         xl: "20px",
@@ -31,7 +31,7 @@ const config: Config = {
     fontSize: {
       xl: "20px",
       inherit: "inherit",
-    }, 
+    },
   },
   plugins: [],
 };

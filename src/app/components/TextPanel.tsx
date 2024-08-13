@@ -7,9 +7,9 @@ export type TextPanelType = {
 const TextPanel: FunctionComponent<TextPanelType> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch ml-[27px] shadow-[0px_1px_10px_rgba(0,_0,_0,_0.25)] rounded-xl bg-bg-white flex flex-row items-start justify-start py-[33.3px] px-[26px] text-left text-base text-sec-black font-jost ${className}`}
+      className={`self-stretch shadow-[0px_1px_10px_rgba(0,_0,_0,_0.25)] rounded-xl bg-bg-white flex flex-row items-start justify-start py-[33.3px] px-[27px] text-left text-base text-sec-black font-jost ${className}`}
     >
-      <div className="w-full overflow-y-auto shrink-0 flex flex-row items-start justify-start">
+      <div className="flex-1 overflow-y-auto flex flex-row items-start justify-start py-0 px-0.5">
         <div className="mt-[-1.3px] h-[540px] flex-1 relative leading-[27px] inline-block">
           <p className="m-0">1. 會員資格與登錄</p>
           <p className="m-0">使用者需年滿18歲才能註冊並使用本平台。</p>
