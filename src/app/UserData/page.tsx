@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import Image from "next/image";
-import UserDataPanel from "../components/UserDataPanel";
+import UserDataPanel from "../components/UserData/UserDataPanel";
 
 export type UserDataType = {
   className?: string;
