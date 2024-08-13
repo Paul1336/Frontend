@@ -11,8 +11,8 @@ const OptionsLinkPanel: FunctionComponent = ({ className }: Props) => {
   const router = useRouter();
 
   const onOptionsGridContainerClick = useCallback(() => {
-    // Please sync "優惠記錄" to the project
-  }, []);
+    router.push("/HistoryElement");
+  }, [router]);
 
   const onOptionsGridContainerClick1 = useCallback(() => {
     router.push("/ContactUs");
