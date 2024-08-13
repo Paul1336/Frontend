@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { FunctionComponent, useCallback } from "react";
 
 interface Props {
@@ -7,6 +8,8 @@ interface Props {
 }
 
 const OptionsLinkPanel: FunctionComponent = ({ className }: Props) => {
+  const router = useRouter();
+
   const onOptionsGridContainerClick = useCallback(() => {
     // Please sync "優惠記錄" to the project
   }, []);
@@ -15,9 +18,9 @@ const OptionsLinkPanel: FunctionComponent = ({ className }: Props) => {
     // Please sync "聯絡我們" to the project
   }, []);
 
-  const onOptionsGridContainerClick2 = useCallback(() => {
-    // Please sync "權益須知" to the project
-  }, []);
+  const onOptionsTermsClick = useCallback(() => {
+    router.push("/Terms");
+  }, [router]);
 
   return (
     <div
@@ -88,7 +91,7 @@ const OptionsLinkPanel: FunctionComponent = ({ className }: Props) => {
         </div>
         <div
           className="self-stretch flex flex-row items-start justify-start relative gap-[18px] cursor-pointer"
-          onClick={onOptionsGridContainerClick2}
+          onClick={onOptionsTermsClick}
         >
           <Image
             className="h-10 w-10 relative rounded-xl object-cover"
