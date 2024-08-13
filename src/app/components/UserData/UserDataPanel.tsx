@@ -14,60 +14,60 @@ const UserDataPanel: FunctionComponent<UserDataPanelType> = ({
     >
       <div className="h-[500px] w-[331px] relative rounded-xl bg-bg-white hidden max-w-full" />
       <div className="flex-1 flex flex-col items-start justify-start gap-4 z-[1]">
-        <UserInfoElement prop="用戶名" rickyLu="Ricky Lu" />
+        <UserInfoElement prop="用戶名" content="Ricky Lu" />
         <UserInfoElement
-          rickyLuGap="23px"
+          contentGap="23px"
           prop="帳號"
           userIconsMinWidth="32px"
-          rickyLu="rickylu40508@gmail.com (G) Lu"
+          content="rickylu40508@gmail.com (G) Lu"
           userAvatarsDisplay="unset"
           userAvatarsMinWidth="unset"
         />
         <UserInfoElement
-          rickyLuGap="20px"
+          contentGap="20px"
           prop="手機號碼"
           userIconsMinWidth="64px"
-          rickyLu="0912-345-678"
+          content="0912-345-678"
           userAvatarsDisplay="inline-block"
           userAvatarsMinWidth="94px"
         />
         <UserInfoElement
-          rickyLuGap="20px"
+          contentGap="20px"
           prop="年齡"
           userIconsMinWidth="32px"
-          rickyLu="19"
+          content="19"
           userAvatarsDisplay="inline-block"
           userAvatarsMinWidth="17px"
         />
         <UserInfoElement
-          rickyLuGap="20px"
+          contentGap="20px"
           prop="身分"
           userIconsMinWidth="32px"
-          rickyLu="大學生"
+          content="大學生"
           userAvatarsDisplay="inline-block"
           userAvatarsMinWidth="48px"
         />
         <UserInfoElement
-          rickyLuGap="39px"
+          contentGap="39px"
           prop="性別"
           userIconsMinWidth="32px"
-          rickyLu="完成資料填寫即可獲得獎勵 !"
+          content="完成資料填寫即可獲得獎勵 !"
           userAvatarsDisplay="unset"
           userAvatarsMinWidth="unset"
         />
         <UserInfoElement
-          rickyLuGap="20px"
+          contentGap="20px"
           prop="地區"
           userIconsMinWidth="32px"
-          rickyLu="台北"
+          content="台北"
           userAvatarsDisplay="inline-block"
           userAvatarsMinWidth="32px"
         />
         <UserInfoElement
-          rickyLuGap="20px"
+          contentGap="20px"
           prop="學校"
           userIconsMinWidth="32px"
-          rickyLu="完成資料填寫即可獲得獎勵 !"
+          content="完成資料填寫即可獲得獎勵 !"
           userAvatarsDisplay="inline-block"
           userAvatarsMinWidth="32px"
           lastElement={true}

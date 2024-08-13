@@ -15,8 +15,8 @@ const OptionsLinkPanel: FunctionComponent = ({ className }: Props) => {
   }, []);
 
   const onOptionsGridContainerClick1 = useCallback(() => {
-    // Please sync "聯絡我們" to the project
-  }, []);
+    router.push("/ContactUs");
+  }, [router]);
 
   const onOptionsTermsClick = useCallback(() => {
     router.push("/Terms");

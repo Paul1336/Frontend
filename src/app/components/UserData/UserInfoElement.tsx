@@ -4,10 +4,10 @@ import SplitLine from "./SplitLine";
 export type UserInfoElementType = {
   className?: string;
   prop?: string;
-  rickyLu?: string;
+  content?: string;
 
   /** Style props */
-  rickyLuGap?: CSSProperties["gap"];
+  contentGap?: CSSProperties["gap"];
   userIconsMinWidth?: CSSProperties["minWidth"];
   userAvatarsDisplay?: CSSProperties["display"];
   userAvatarsMinWidth?: CSSProperties["minWidth"];
@@ -16,19 +16,19 @@ export type UserInfoElementType = {
 
 const UserInfoElement: FunctionComponent<UserInfoElementType> = ({
   className = "",
-  rickyLuGap,
+  contentGap,
   prop,
   userIconsMinWidth,
-  rickyLu,
+  content,
   userAvatarsDisplay,
   userAvatarsMinWidth,
   lastElement,
 }) => {
   const userNamesStyle: CSSProperties = useMemo(() => {
     return {
-      gap: rickyLuGap,
+      gap: contentGap,
     };
-  }, [rickyLuGap]);
+  }, [contentGap]);
 
   const divStyle: CSSProperties = useMemo(() => {
     return {
@@ -61,7 +61,7 @@ const UserInfoElement: FunctionComponent<UserInfoElementType> = ({
           className="relative tracking-[-0.01em] leading-[150%] text-top text-right inline-block min-w-[54px]"
           style={rickyLuStyle}
         >
-          {rickyLu}
+          {content}
         </div>
       </div>
       <div className="self-stretch flex flex-row items-start justify-start py-0 pl-px pr-0">
