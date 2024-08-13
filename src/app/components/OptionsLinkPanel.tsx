@@ -11,7 +11,7 @@ const OptionsLinkPanel: FunctionComponent = ({ className }: Props) => {
   const router = useRouter();
 
   const onOptionsGridContainerClick = useCallback(() => {
-    router.push("/HistoryElement");
+    router.push("/CouponHistory");
   }, [router]);
 
   const onOptionsGridContainerClick1 = useCallback(() => {
