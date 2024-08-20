@@ -24,9 +24,9 @@ export default function RootLayout({
       <body className={jost.className}>
         <ThemeProvider>
           <SessionProvider>
-            <Topbar />
+            {/* <Topbar /> */}
             <div className="min-h-[calc(100%-80px)]">{children}</div>
-            <Footer />
+            {/* <Footer /> */}
           </SessionProvider>
         </ThemeProvider>
       </body>

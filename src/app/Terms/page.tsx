@@ -17,7 +17,7 @@ const Terms: FunctionComponent<TermsType> = ({ className = "" }) => {
 
   return (
     <div
-      className={`bg-bg-grey max-w-full overflow-hidden flex flex-col items-start justify-start pt-20 px-[31px] pb-11 box-border gap-[29px] leading-[normal] tracking-[normal] text-center text-base text-sec-black font-jost ${className}`}
+      className={`bg-bg-grey h-dvh max-w-full overflow-auto flex flex-col items-start justify-start pt-20 px-[31px] pb-11 box-border gap-[29px] leading-[normal] tracking-[normal] text-center text-base text-sec-black font-jost ${className}`}
     >
       <div className="flex flex-col items-start justify-start gap-[22px]">
         <div className="flex flex-row items-start justify-start gap-[9px]">

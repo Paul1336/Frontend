@@ -17,7 +17,7 @@ const UserData: FunctionComponent<UserDataType> = ({ className = "" }) => {
   }, [router]);
 
   return (
-    <div className="w-full relative bg-bg-grey overflow-hidden flex flex-col items-start justify-start pt-0 pb-7 pl-1 pr-0 box-border gap-[71px] leading-[normal] tracking-[normal] text-center text-[12px] text-sec-black font-jost">
+    <div className="w-full h-lvh relative bg-bg-grey overflow-hidden flex flex-col items-start justify-start pt-0 pb-7 pl-1 pr-0 box-border gap-[71px] leading-[normal] tracking-[normal] text-center text-[12px] text-sec-black font-jost">
       <section className="self-stretch flex flex-col items-end justify-start py-0 pl-0 pr-[31px] box-border gap-[35px] max-w-full text-center text-[16px] text-sec-black font-jost">
         <Image
           className="mr-[-35px] w-[393px] relative max-h-full overflow-hidden object-cover max-w-[110%] shrink-0"

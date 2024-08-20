@@ -10,7 +10,7 @@ const CouponHistoryList: FunctionComponent<CouponHistoryListType> = ({
 }) => {
   return (
     <section
-      className={`self-stretch shadow-[0px_1px_10px_rgba(0,_0,_0,_0.25)] rounded-xl bg-bg-white overflow-hidden flex flex-row items-start justify-start py-[25px] px-[27px] text-left text-base text-sec-black font-jost ${className}`}
+      className={`self-stretch shadow-[0px_1px_10px_rgba(0,_0,_0,_0.25)] rounded-xl bg-bg-white flex flex-row items-start justify-start py-[25px] px-[27px] text-left text-base text-sec-black font-jost ${className}`}
     >
       <div className="h-[555px] flex-1 overflow-y-auto flex flex-col items-start justify-start gap-3">
         <HistoryListElement
