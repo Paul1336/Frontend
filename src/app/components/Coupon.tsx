@@ -1,6 +1,6 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
 
-export type GroupComponentType = {
+export type CouponType = {
   className?: string;
   prop?: string;
   prop1?: string;
@@ -19,7 +19,7 @@ export type GroupComponentType = {
   onGroupContainerClick?: () => void;
 };
 
-const GroupComponent: FunctionComponent<GroupComponentType> = ({
+const Coupon: FunctionComponent<CouponType> = ({
   className = "",
   onGroupContainerClick,
   propFlexDirection,
@@ -96,4 +96,4 @@ const GroupComponent: FunctionComponent<GroupComponentType> = ({
   );
 };
 
-export default GroupComponent;
+export default Coupon;
