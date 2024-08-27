@@ -3,13 +3,9 @@ import { FunctionComponent, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "../components/Navbar";
 import SearchBar from "../components/SearchBar";
-import GroupComponent from "../components/GroupComponent";
+import Coupon from "../components/Coupon";
 
-export type Frame8Type = {
-  className?: string;
-};
-
-const Frame8: FunctionComponent<Frame8Type> = ({ className = "" }) => {
+const EasyUse = ({ className = "" }) => {
   const router = useRouter();
 
   const onGroupContainerClick = useCallback(() => {
@@ -47,7 +43,7 @@ const Frame8: FunctionComponent<Frame8Type> = ({ className = "" }) => {
         </div>
       </section>
       <section className="self-stretch h-[542px] overflow-y-auto shrink-0 flex flex-col items-start justify-start pt-2.5 px-[19px] pb-[13px] box-border gap-[25px] max-w-full">
-        <GroupComponent
+        <Coupon
           onGroupContainerClick={onGroupContainerClick}
           propFlexDirection="row"
           propFlex="1"
@@ -60,7 +56,7 @@ const Frame8: FunctionComponent<Frame8Type> = ({ className = "" }) => {
           propRight="94px"
           propLeft="unset"
         />
-        <GroupComponent
+        <Coupon
           propFlexDirection="row"
           propFlex="1"
           propAlignSelf="unset"
@@ -72,7 +68,7 @@ const Frame8: FunctionComponent<Frame8Type> = ({ className = "" }) => {
           propRight="unset"
           propLeft="119px"
         />
-        <GroupComponent
+        <Coupon
           propFlexDirection="row"
           propFlex="1"
           propAlignSelf="unset"
@@ -84,7 +80,7 @@ const Frame8: FunctionComponent<Frame8Type> = ({ className = "" }) => {
           propRight="94px"
           propLeft="unset"
         />
-        <GroupComponent
+        <Coupon
           propFlexDirection="row"
           propFlex="1"
           propAlignSelf="unset"
@@ -96,7 +92,7 @@ const Frame8: FunctionComponent<Frame8Type> = ({ className = "" }) => {
           propRight="unset"
           propLeft="119px"
         />
-        <GroupComponent
+        <Coupon
           propFlexDirection="column"
           propFlex="unset"
           propAlignSelf="stretch"
@@ -108,7 +104,7 @@ const Frame8: FunctionComponent<Frame8Type> = ({ className = "" }) => {
           propRight="unset"
           propLeft="119px"
         />
-        <GroupComponent
+        <Coupon
           prop="4pm-7pm 來店消費即送甜點一份"
           prop1="永康街左撇子"
         />
@@ -117,4 +113,4 @@ const Frame8: FunctionComponent<Frame8Type> = ({ className = "" }) => {
   );
 };
 
-export default Frame8;
+export default EasyUse;
