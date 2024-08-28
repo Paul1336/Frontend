@@ -18,7 +18,7 @@ const EasyUse = ({ className = "" }) => {
 
   return (
     <div
-      className={`w-[393px] bg-bg-grey max-w-full flex flex-col items-end justify-start pt-[100px] px-[11px] pb-4 box-border gap-[15px] leading-[normal] tracking-[normal] ${className}`}
+      className={`w-full bg-bg-grey max-w-full flex flex-col items-end justify-start pt-[100px] px-[11px] pb-4 box-border gap-[15px] leading-[normal] tracking-[normal] ${className}`}
     >
       <section className="self-stretch flex flex-row items-start justify-end py-0 pl-5 pr-[17px] box-border max-w-full text-left text-13xl text-sec-black font-jost">
         <div className="flex-1 flex flex-col items-start justify-start gap-[25px] max-w-full">
