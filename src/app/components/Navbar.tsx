@@ -18,7 +18,7 @@ const Navbar: FunctionComponent<NavbarType> = ({ className = "" }) => {
 
   return (
     <div
-      className={`self-stretch h-[54px] relative shadow-[0px_1px_10px_rgba(0,_0,_0,_0.25)] ${className}`}
+      className={`self-stretch h-[54px] relative shadow-[0px_1px_10px_rgba(0,_0,_0,_0.25)] rounded-xl ${className}`}
     >
       <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-xl bg-bg-white">
         <div className="absolute h-[40.74%] w-[6.65%] top-[29.63%] right-[0%] bottom-[29.63%] left-[14.2%] rounded-xl bg-act-yellow z-[1]">

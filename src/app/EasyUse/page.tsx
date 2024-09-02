@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { FunctionComponent, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "../components/Navbar";
@@ -13,7 +13,7 @@ const EasyUse = ({ className = "" }) => {
   }, [router]);
 
   const onMenuIconClick = useCallback(() => {
-    router.push("/7");
+    router.push("/OptionsMenu");
   }, [router]);
 
   return (
@@ -24,7 +24,7 @@ const EasyUse = ({ className = "" }) => {
         <div className="flex-1 flex flex-col items-start justify-start gap-[25px] max-w-full">
           <div className="self-stretch flex flex-col items-start justify-start gap-[17px]">
             <div className="self-stretch flex flex-row items-start justify-between gap-5">
-              <h1 className="m-0 relative text-inherit tracking-[-0.01em] leading-[150%] font-bold font-[inherit] inline-block min-w-[127px]">
+              <h1 className="text-[32px] m-0 relative tracking-[-0.01em] leading-[150%] font-bold font-[inherit]">
                 隨取即用
               </h1>
               <div className="flex flex-col items-start justify-start pt-1 px-0 pb-0">
@@ -43,71 +43,13 @@ const EasyUse = ({ className = "" }) => {
         </div>
       </section>
       <section className="self-stretch h-[542px] overflow-y-auto shrink-0 flex flex-col items-start justify-start pt-2.5 px-[19px] pb-[13px] box-border gap-[25px] max-w-full">
-        <Coupon
-          onGroupContainerClick={onGroupContainerClick}
-          propFlexDirection="row"
-          propFlex="1"
-          propAlignSelf="unset"
-          prop="來店消費即可折 5 元"
-          propHeight="unset"
-          prop1="政大茶亭一店"
-          propWidth="unset"
-          propMinWidth="118px"
-          propRight="94px"
-          propLeft="unset"
-        />
-        <Coupon
-          propFlexDirection="row"
-          propFlex="1"
-          propAlignSelf="unset"
-          prop="滿50元即送青菜一份"
-          propHeight="unset"
-          prop1="極鮮滷味"
-          propWidth="unset"
-          propMinWidth="79px"
-          propRight="unset"
-          propLeft="119px"
-        />
-        <Coupon
-          propFlexDirection="row"
-          propFlex="1"
-          propAlignSelf="unset"
-          prop="滿130即送蛋花湯一碗"
-          propHeight="unset"
-          prop1="永康街左撇子"
-          propWidth="unset"
-          propMinWidth="118px"
-          propRight="94px"
-          propLeft="unset"
-        />
-        <Coupon
-          propFlexDirection="row"
-          propFlex="1"
-          propAlignSelf="unset"
-          prop="4pm-7pm 來店消費即送甜點一份"
-          propHeight="unset"
-          prop1="極鮮滷味"
-          propWidth="unset"
-          propMinWidth="79px"
-          propRight="unset"
-          propLeft="119px"
-        />
-        <Coupon
-          propFlexDirection="column"
-          propFlex="unset"
-          propAlignSelf="stretch"
-          prop="4pm-7pm 來店消費即送甜點一份"
-          propHeight="18px"
-          prop1="首思義"
-          propWidth="60px"
-          propMinWidth="unset"
-          propRight="unset"
-          propLeft="119px"
-        />
-        <Coupon
-          prop="4pm-7pm 來店消費即送甜點一份"
-          prop1="永康街左撇子"
-        />
+        <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
+        <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
+        <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
+        <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
+        <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
+        <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
+        <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
       </section>
     </div>
   );
