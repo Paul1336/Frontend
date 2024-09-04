@@ -17,6 +17,7 @@ const config: Config = {
         "bg-grey": "#f8f8f8",
         "sec-black": "#333",
         "bg-white": "#fff",
+        "act-yellow": "#ffad31",
         tomato: "#eb3223",
         mid: "#b8b8b8",
       },
