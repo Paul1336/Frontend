@@ -42,7 +42,7 @@ const EasyUse = ({ className = "" }) => {
           <SearchBar />
         </div>
       </section>
-      <section className="self-stretch h-[542px] overflow-y-auto shrink-0 flex flex-col items-start justify-start pt-2.5 px-[19px] pb-[13px] box-border gap-[25px] max-w-full">
+      <section className="self-stretch h-[542px] overflow-y-auto shrink-0 flex flex-col items-start justify-start pt-[15px] px-[19px] pb-[13px] box-border gap-[25px] max-w-full">
         <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
         <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
         <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
