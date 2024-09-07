@@ -19,14 +19,14 @@ const Coupon: FunctionComponent<CouponType> = ({
 }) => {
   const router = useRouter();
 
-  const onGroupContainerClick = useCallback(() => {
-    router.push("/");
+  const onCouponClick = useCallback(() => {
+    router.push("/Verify");
   }, [router]);
 
   return (
     <div
       className={`self-stretch drop-shadow-[0px_1px_10px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start shrink-0 max-w-full text-left text-xs text-sec-black font-jost ${className}`}
-      onClick={onGroupContainerClick}
+      onClick={onCouponClick}
     >
       <div className="flex-1 flex flex-row items-start justify-start pt-[73px] px-2 pb-5 box-border relative max-w-full">
         <div className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-xl bg-bg-white" />
