@@ -10,15 +10,6 @@ export type CouponType = {
   className?: string;
   description?: string;
   CouponName?: string;
-
-  propFlexDirection?: CSSProperties["flexDirection"];
-  propFlex?: CSSProperties["flex"];
-  propAlignSelf?: CSSProperties["alignSelf"];
-  propHeight?: CSSProperties["height"];
-  propWidth?: CSSProperties["width"];
-  propMinWidth?: CSSProperties["minWidth"];
-  propRight?: CSSProperties["right"];
-  propLeft?: CSSProperties["left"];
 };
 
 const Coupon: FunctionComponent<CouponType> = ({
