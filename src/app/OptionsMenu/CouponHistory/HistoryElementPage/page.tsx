@@ -1,9 +1,8 @@
 "use client";
 import { FunctionComponent, useCallback } from "react";
 import Image from "next/image";
-import UserDataPanel from "../components/UserData/UserDataPanel";
 import { useRouter } from "next/navigation";
-import UserInfoElement from "../components/UserData/UserInfoElement";
+import UserInfoElement from "../../../components/UserInfoElement";
 
 export type UserDataType = {
   className?: string;
@@ -54,38 +53,38 @@ const UserData: FunctionComponent<UserDataType> = ({ className = "" }) => {
         </div>
 
         <div
-      className={`self-stretch ml-[27px] shadow-[0px_1px_10px_rgba(0,_0,_0,_0.25)] rounded-xl bg-bg-white flex flex-row items-start justify-start pt-[31px] pb-[29px] pl-[30px] pr-[29px] box-border max-w-full text-left text-base text-sec-black font-jost ${className}`}
-    >
-      <div className="h-[500px] w-[331px] relative rounded-xl bg-bg-white hidden max-w-full" />
-      <div className="flex-1 flex flex-col items-start justify-start gap-4 z-[1]">
-        <UserInfoElement prop="優惠名稱" content="來店消費即可折 5 元" />
-        <UserInfoElement
-          contentGap="23px"
-          prop="取得方式"
-          userIconsMinWidth="32px"
-          content="一般活動"
-          userAvatarsDisplay="unset"
-          userAvatarsMinWidth="unset"
-        />
-        <UserInfoElement
-          contentGap="23px"
-          prop="狀態"
-          userIconsMinWidth="32px"
-          content="已使用"
-          userAvatarsDisplay="unset"
-          userAvatarsMinWidth="unset"
-        />
-        <UserInfoElement
-          contentGap="20px"
-          prop="使用時間"
-          userIconsMinWidth="64px"
-          content="2024/07/14, 14:15"
-          userAvatarsDisplay="inline-block"
-          userAvatarsMinWidth="94px"
-          lastElement={true}
-        />
-      </div>
-    </div>
+          className={`self-stretch ml-[27px] shadow-[0px_1px_10px_rgba(0,_0,_0,_0.25)] rounded-xl bg-bg-white flex flex-row items-start justify-start pt-[31px] pb-[29px] pl-[30px] pr-[29px] box-border max-w-full text-left text-base text-sec-black font-jost ${className}`}
+        >
+          <div className="h-[500px] w-[331px] relative rounded-xl bg-bg-white hidden max-w-full" />
+          <div className="flex-1 flex flex-col items-start justify-start gap-4 z-[1]">
+            <UserInfoElement prop="優惠名稱" content="來店消費即可折 5 元" />
+            <UserInfoElement
+              contentGap="23px"
+              prop="取得方式"
+              userIconsMinWidth="32px"
+              content="一般活動"
+              userAvatarsDisplay="unset"
+              userAvatarsMinWidth="unset"
+            />
+            <UserInfoElement
+              contentGap="23px"
+              prop="狀態"
+              userIconsMinWidth="32px"
+              content="已使用"
+              userAvatarsDisplay="unset"
+              userAvatarsMinWidth="unset"
+            />
+            <UserInfoElement
+              contentGap="20px"
+              prop="使用時間"
+              userIconsMinWidth="64px"
+              content="2024/07/14, 14:15"
+              userAvatarsDisplay="inline-block"
+              userAvatarsMinWidth="94px"
+              lastElement={true}
+            />
+          </div>
+        </div>
       </section>
     </div>
   );

@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import HistoryListElement from "../components/HistoryListElement";
+import HistoryListElement from "./HistoryListElement";
 
 export type CouponHistoryListType = {
   className?: string;
@@ -140,7 +140,6 @@ const CouponHistoryList: FunctionComponent<CouponHistoryListType> = ({
           forward="/forward-1@2x.png"
           lastElement={true}
         />
-
       </div>
     </section>
   );

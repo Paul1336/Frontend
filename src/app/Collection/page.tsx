@@ -3,7 +3,7 @@ import { FunctionComponent, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "../components/Navbar";
 import SearchBar from "../components/SearchBar";
-import Gift from "../components/Gift";
+import Gift from "./Gift";
 import Coupon from "../components/Coupon";
 
 const EasyUse = ({ className = "" }) => {

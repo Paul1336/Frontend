@@ -1,7 +1,7 @@
 "use client";
 import { FunctionComponent, useCallback } from "react";
 import Image from "next/image";
-import UserDataPanel from "../components/UserData/UserDataPanel";
+import UserDataPanel from "../../components/UserData/UserDataPanel";
 import { useRouter } from "next/navigation";
 
 export type UserDataType = {

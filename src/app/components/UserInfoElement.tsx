@@ -1,5 +1,5 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
-import SplitLine from "./SplitLine";
+import SplitLine from "../OptionsMenu/UserData/SplitLine";
 
 export type UserInfoElementType = {
   className?: string;
