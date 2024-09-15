@@ -1,9 +1,7 @@
 "use client";
 import { FunctionComponent, useCallback } from "react";
 import Image from "next/image";
-import UserDataPanel from "../../components/UserData/UserDataPanel";
-import { useRouter } from "next/navigation";
-import UserInfoElement from "../../components/UserData/UserInfoElement";
+import { useRouter, useParams } from "next/navigation";
 
 export type VerifyType = {
   className?: string;
@@ -11,6 +9,8 @@ export type VerifyType = {
 
 const Verify: FunctionComponent<VerifyType> = ({ className = "" }) => {
   const router = useRouter();
+
+  const { id } = useParams();
 
   const onGoBackContainerClick = useCallback(() => {
     router.back();

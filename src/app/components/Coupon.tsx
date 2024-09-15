@@ -1,27 +1,19 @@
-import {
-  FunctionComponent,
-  useCallback,
-  useMemo,
-  type CSSProperties,
-} from "react";
+import { FunctionComponent, useCallback, useMemo, type CSSProperties} from "react";
 import { useRouter } from "next/navigation";
 
 export type CouponType = {
   className?: string;
   description?: string;
   CouponName?: string;
+  id?: number;
 };
 
-const Coupon: FunctionComponent<CouponType> = ({
-  className = "",
-  description,
-  CouponName,
-}) => {
+const Coupon: FunctionComponent<CouponType> = ({className = "", description, CouponName, id}) => {
   const router = useRouter();
 
   const onCouponClick = useCallback(() => {
-    router.push("/Verify");
-  }, [router]);
+    router.push(`/EasyUse/${id}`);
+  }, [router, id]);
 
   return (
     <div
