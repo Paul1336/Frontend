@@ -12,6 +12,16 @@ export type CouponType = {
   id?: number;
 };
 
+const coupons = [
+  { id: 1, description: "來店消費即可折 5 元", CouponName: "政大茶亭一店" },
+  { id: 2, description: "來店消費即可折 5 元", CouponName: "政大茶亭二店" },
+  { id: 3, description: "來店消費即可折 10 元", CouponName: "政大茶亭三店" },
+  { id: 4, description: "滿 100 元即可折 15 元", CouponName: "政大茶亭四店" },
+  { id: 5, description: "滿 200 元折 20 元", CouponName: "政大茶亭五店" },
+  { id: 6, description: "第二杯半價", CouponName: "政大茶亭六店" },
+  { id: 7, description: "指定飲品折扣", CouponName: "政大茶亭七店" },
+];
+
 const Coupon: FunctionComponent<CouponType> = ({className = "", description, CouponName, id}) => {
   const router = useRouter();
 
@@ -83,10 +93,9 @@ const EasyUse = ({ className = "" }) => {
       <section className="self-stretch h-[75%] overflow-y-auto shrink-0 flex flex-col items-start justify-start pt-[23px] px-[19px] pb-[13px] box-border gap-[25px] max-w-full">
         <Gift GiftType="每日獨特酷胖" ReceiveType="領取" />
         <Gift GiftType="Emily 的贈禮" ReceiveType="收下" />
-        <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
-        <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
-        <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
-        <Coupon description="來店消費即可折 5 元" CouponName="政大茶亭一店" />
+        {coupons.map((coupon, index) => (
+            <Coupon description={coupon.description} CouponName={coupon.CouponName} id={coupon.id}></Coupon>
+        ))}
       </section>
     </div>
   );
