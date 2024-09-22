@@ -5,10 +5,10 @@ export type NavbarType = {
   className?: string;
   atEasyUse?: boolean;
   atCollection?: boolean;
-  atData?: boolean;
+  atStatistics?: boolean;
 };
 
-const Navbar: FunctionComponent<NavbarType> = ({ className = "", atEasyUse, atCollection, atData }) => {
+const Navbar: FunctionComponent<NavbarType> = ({ className = "", atEasyUse, atCollection, atStatistics }) => {
   const router = useRouter();
 
   const onEasyUseClick = useCallback(() => {
@@ -19,8 +19,8 @@ const Navbar: FunctionComponent<NavbarType> = ({ className = "", atEasyUse, atCo
     router.push("/Collection");
   }, [router]);
 
-  const onDataClick = useCallback(() => {
-    router.push("/Data");
+  const onStatisticsClick = useCallback(() => {
+    router.push("/Statistics");
   }, [router]);
   
   return (
@@ -48,13 +48,13 @@ const Navbar: FunctionComponent<NavbarType> = ({ className = "", atEasyUse, atCo
           />
         </div>
 
-        <div className={`absolute h-[66%] w-[30%] right-[4%] top-[50%] translate-y-[-50%] rounded-xl ${atData ? 'bg-act-yellow' : ''} z-[1]`}>  
+        <div className={`absolute h-[66%] w-[30%] right-[4%] top-[50%] translate-y-[-50%] rounded-xl ${atStatistics ? 'bg-act-yellow' : ''} z-[1]`}>  
           <img
             className="absolute inset-0 m-auto w-[25px] h-[25px] object-cover cursor-pointer"
             loading="lazy"
             alt=""
             src="/combo-chart@2x.png"
-            onClick={onDataClick}
+            onClick={onStatisticsClick}
           />
         </div>
       </div>
