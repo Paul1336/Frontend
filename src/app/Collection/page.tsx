@@ -94,7 +94,7 @@ const EasyUse = ({ className = "" }) => {
         <Gift GiftType="每日獨特酷胖" ReceiveType="領取" />
         <Gift GiftType="Emily 的贈禮" ReceiveType="收下" />
         {coupons.map((coupon, index) => (
-            <Coupon description={coupon.description} CouponName={coupon.CouponName} id={coupon.id}></Coupon>
+            <Coupon key={coupon.id} description={coupon.description} CouponName={coupon.CouponName} id={coupon.id}></Coupon>
         ))}
       </section>
     </div>

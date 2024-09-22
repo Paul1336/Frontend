@@ -91,7 +91,7 @@ const EasyUse = ({ className = "" }) => {
       </section>
       <section className="self-stretch h-[75%] overflow-y-auto shrink-0 flex flex-col items-start justify-start pt-[23px] px-[19px] pb-[23px] box-border gap-[25px] max-w-full">
         {coupons.map((coupon, index) => (
-            <Coupon description={coupon.description} CouponName={coupon.CouponName} id={coupon.id}></Coupon>
+            <Coupon key={coupon.id} description={coupon.description} CouponName={coupon.CouponName} id={coupon.id}></Coupon>
         ))}
       </section>
     </div>
