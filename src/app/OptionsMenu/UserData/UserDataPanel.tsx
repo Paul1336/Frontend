@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import UserInfoElement from "./UserInfoElement";
+import UserInfoElement from "../../components/UserInfoElement";
 
 export type UserDataPanelType = {
   className?: string;

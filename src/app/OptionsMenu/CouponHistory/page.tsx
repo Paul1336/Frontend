@@ -1,6 +1,6 @@
 "use client";
 import { FunctionComponent, useCallback } from "react";
-import CouponHistoryList from "../components/CouponHistoryList";
+import CouponHistoryList from "./CouponHistoryList";
 import { useRouter } from "next/navigation";
 
 export type CouponHistoryType = {
@@ -10,12 +10,11 @@ export type CouponHistoryType = {
 const CouponHistory: FunctionComponent<CouponHistoryType> = ({
   className = "",
 }) => {
+  const router = useRouter();
 
- const router = useRouter();
-
- const onClickBack = useCallback(() => {
-  router.back();
- }, [router]);
+  const onClickBack = useCallback(() => {
+    router.back();
+  }, [router]);
 
   return (
     <div
@@ -31,7 +30,10 @@ const CouponHistory: FunctionComponent<CouponHistoryType> = ({
               src="/forward@2x.png"
             />
           </div>
-          <div className="relative tracking-[-0.01em] leading-[150%] inline-block min-w-[32px]" onClick={onClickBack}>
+          <div
+            className="relative tracking-[-0.01em] leading-[150%] inline-block min-w-[32px]"
+            onClick={onClickBack}
+          >
             返回
           </div>
         </div>

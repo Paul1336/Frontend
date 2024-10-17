@@ -1,6 +1,6 @@
 "use client";
 import { FunctionComponent, useCallback } from "react";
-import OptionsLinkPanel from "../components/OptionsLinkPanel";
+import OptionsLinkPanel from "./OptionsLinkPanel";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
