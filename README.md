@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Please include the .env in the folder:
+BACKEND_URL="http://localhost:xxxx"
+(depends on the port used for running the backend localhost)
+
 ## Getting Started
 
 First, run the development server:
