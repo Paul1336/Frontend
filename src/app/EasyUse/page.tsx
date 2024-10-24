@@ -1,4 +1,6 @@
 "use client";
+import React from "react";
+import services from "../api/api-services";
 import { FunctionComponent, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "../components/Navbar";
@@ -21,7 +23,12 @@ export type CouponType = {
   id?: number;
 };
 
-const Coupon: FunctionComponent<CouponType> = ({className = "", description, CouponName, id}) => {
+const Coupon: FunctionComponent<CouponType> = ({
+  className = "",
+  description,
+  CouponName,
+  id,
+}) => {
   const router = useRouter();
 
   const onCouponClick = useCallback(() => {
@@ -63,6 +70,18 @@ const EasyUse = ({ className = "" }) => {
     router.push("/OptionsMenu");
   }, [router]);
 
+  const [refresh, setRefresh] = React.useState(0);
+
+  React.useEffect(() => {
+    async function fetchData() {
+      const res = await services.getCoupons();
+      if (res && res.status === 200) {
+        console.log("in page: ", res);
+      }
+    }
+    setRefresh(0);
+    fetchData();
+  }, [refresh]);
   return (
     <div
       className={`w-full h-dvh bg-bg-grey max-w-full flex flex-col items-end justify-start pt-[100px] px-[11px] pb-4 box-border gap-[15px] leading-[normal] tracking-[normal] ${className}`}
@@ -91,8 +110,14 @@ const EasyUse = ({ className = "" }) => {
       </section>
       <section className="self-stretch h-[75%] overflow-y-auto shrink-0 flex flex-col items-start justify-start pt-[23px] px-[19px] pb-[23px] box-border gap-[25px] max-w-full">
         {coupons.map((coupon, index) => (
-            <Coupon key={coupon.id} description={coupon.description} CouponName={coupon.CouponName} id={coupon.id}></Coupon>
+          <Coupon
+            key={coupon.id}
+            description={coupon.description}
+            CouponName={coupon.CouponName}
+            id={coupon.id}
+          ></Coupon>
         ))}
+        <button onClick={() => setRefresh(1)}>test</button>
       </section>
     </div>
   );
