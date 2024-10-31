@@ -11,15 +11,15 @@ const OptionsLinkPanel: FunctionComponent = ({ className }: Props) => {
   const router = useRouter();
 
   const onOptionsGridContainerClick = useCallback(() => {
-    router.push("/CouponHistory");
+    router.push("/OptionsMenu/CouponHistory");
   }, [router]);
 
   const onOptionsGridContainerClick1 = useCallback(() => {
-    router.push("/ContactUs");
+    router.push("/OptionsMenu/ContactUs");
   }, [router]);
 
   const onOptionsTermsClick = useCallback(() => {
-    router.push("/Terms");
+    router.push("/OptionsMenu/Terms");
   }, [router]);
 
   return (

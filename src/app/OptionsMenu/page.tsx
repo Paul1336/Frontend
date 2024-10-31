@@ -9,7 +9,7 @@ const OptionsMenu: FunctionComponent = () => {
   const router = useRouter();
 
   const onUserDataContainerClick = useCallback(() => {
-    router.push("/UserData");
+    router.push("/OptionsMenu/UserData");
   }, [router]);
 
   const onClickBack = useCallback(() => {

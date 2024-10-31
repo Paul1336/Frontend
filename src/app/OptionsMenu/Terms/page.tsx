@@ -1,6 +1,6 @@
 "use client";
 import { FunctionComponent, useCallback } from "react";
-import TextPanel from "../components/TextPanel";
+import TextPanel from "./TextPanel";
 import { useRouter } from "next/navigation";
 import { on } from "events";
 
@@ -29,7 +29,10 @@ const Terms: FunctionComponent<TermsType> = ({ className = "" }) => {
               src="/forward@2x.png"
             />
           </div>
-          <div className="relative tracking-[-0.01em] leading-[150%] inline-block min-w-[32px]" onClick={onClickBack}>
+          <div
+            className="relative tracking-[-0.01em] leading-[150%] inline-block min-w-[32px]"
+            onClick={onClickBack}
+          >
             返回
           </div>
         </div>
